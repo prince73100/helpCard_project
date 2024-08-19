@@ -9,7 +9,7 @@
 * PORT=3000
 * DATABASE_URL= write here mongoDB url to connect Database if you are use MongoDB
 
-#  To run the project in production mode
+#  To run the project in local 
 
 npm run start
 
