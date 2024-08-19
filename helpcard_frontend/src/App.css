@@ -1,0 +1,80 @@
+.navbar {
+    background-color: rgb(210, 210, 210);
+    color: white;
+}
+.homepage{
+    margin-top: 200px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(207, 102, 46);
+    font-weight: 700;
+}
+
+.subnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.subnav li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+li:hover {
+    border: 1px solid white;
+}
+
+.heading_tag {
+    margin-top: 30px;
+}
+
+hr {
+    width: 25%;
+}
+
+.mainsignup {
+    min-height: 400px;
+    width: 35%;
+    background-color: rgb(244, 239, 239);
+    border-radius: 5px;
+}
+.mainsignup h3{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.inputmain{
+    margin-top: 20px;
+}
+
+.input1 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+}
+.input1 input{
+    min-height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+}
+
+.btn {
+    margin-top: 70px;
+}
+
+.btn button{
+    padding: 10px;
+    min-width: 100px;
+    cursor: pointer;
+    background-color: rgb(79, 211, 241);
+    border: none;
+    outline: none;
+    border-radius: 5px 3px;
+}
