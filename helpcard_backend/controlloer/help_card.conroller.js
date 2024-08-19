@@ -66,11 +66,13 @@ const handle_help_card_basedon_title = async (req, res) => {
             })
         }
         res.status(200).json({
-            helpCard
+            helpCard,
+            status:200
         })
     } catch (error) {
         res.status(500).json({
-            error: error.message
+            error: error.message,
+            status:500
         })
     }
 }

@@ -37,6 +37,13 @@ function Homepage() {
       return
     }
     const res = await axios.get(`http://localhost:3000/api/v1/helpcard/gethelpcard/${query}`)
+    console.log(res);
+    
+    const firstnum = res.data.status
+    if (Math.floor(firstnum / 100) !== 2) {
+        alert(res.data.message)
+        return;
+    }
     const arr = []
     arr.push(res.data.helpCard)
     dispatch(helpcardActions.addHelpcard(arr))
@@ -56,7 +63,7 @@ function Homepage() {
           </div>
         </div>
         {suggestions.length > 0 && (
-          <ul className='absolute bg-white p-4 z-50 right-86 mt-5 pb-5'>
+          <ul className='absolute bg-white p-4  right-86 mt-5 pb-5'>
             {suggestions.map((suggestion, index) => (
               <li className='border-b  w-44 hover:cursor-pointer hover:bg-rose-100' key={index} onClick={() => handleFinditem(suggestion)}>
                 {suggestion}

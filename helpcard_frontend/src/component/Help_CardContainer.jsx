@@ -17,7 +17,7 @@ const dispatch = useDispatch()
     
 
     return (
-        <div className=' relative left-56 w-2/3 flex flex-wrap  justify-center'>
+        <div className=' relative left-56 w-2/3 flex flex-wrap  justify-center' style={{zIndex:-1}}>
             {datas.map((item) => <Help_card key={item._id} title={item.title} description={item.description} />)}
         </div>
     )
